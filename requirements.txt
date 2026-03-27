@@ -1,3 +1,6 @@
 tempest-next
 matplotlib
 jupyter
+pynhd
+pygeohydro
+geopandas
