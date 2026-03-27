@@ -1,0 +1,3 @@
+tempest-next
+matplotlib
+jupyter
