@@ -4,3 +4,4 @@ jupyter
 pynhd
 pygeohydro
 geopandas
+cfgrib
