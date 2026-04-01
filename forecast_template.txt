@@ -1,0 +1,21 @@
+Experimental national stream water temperature forecast:
+
+This week, stream temperatures are expected to <SOMETHING>. <ANOMALIES> Overall temperatures range from <X TO Y>. Streams are generally expected to <TREND>. (This forecast is for a total of 913 small [HUC-12] watersheds randomly selected from around the country.)
+
+Warning: this is an experimental stream water temperature forecast for the upcoming week. Results are not guaranteed in any capacity. Typical errors are approximately 2.5 C (4 F).
+
+These data and related items of information have not been formally disseminated by NOAA, and do not represent any agency determination, view, or policy. This research is funded by the NOAA Cooperative Institute for Research to Operations in Hydrology.
+
+The code used to generate these forecasts is available on GitHub at https://
+github.com/mines-ciroh/natl-temp-forecast (requires support for ecCodes, for which Linux is recommended). Actual weekly forecasts are made available on CUAHSI HydroShare at 
+http://www.
+hydroshare.org/resource/b8852529788a437a8d697e9b0435b99a.
+
+---
+Alt text:
+
+A four-panel plot showing various components of a weekly stream temperature forecast over the contiguous United States.
+Top left shows a range of weekly mean temperatures, <DESCRIPTION>
+Top right shows temperature trends over the week. <DESCRIPTION>
+Bottom left shows maximum temperature anomaly during the week. <DESCRIPTION>
+Bottom right shows minimum temperature anomaly. <DESCRIPTION>
