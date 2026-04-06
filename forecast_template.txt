@@ -9,7 +9,7 @@ These data and related items of information have not been formally disseminated 
 The code used to generate these forecasts is available on GitHub at https://
 github.com/mines-ciroh/natl-temp-forecast (requires support for ecCodes, for which Linux is recommended). Actual weekly forecasts are made available on CUAHSI HydroShare at 
 http://www.
-hydroshare.org/resource/b8852529788a437a8d697e9b0435b99a. The model is TempEst-NEXT (https://rivertempest.org/next/readme.html, manuscript in review).
+hydroshare.org/resource/b8852529788a437a8d697e9b0435b99a. The model is TempEst-NEXT (https://rivertempest.org, manuscript in review).
 
 #hydrology #forecast #watertemperature #temperature #modeling
 
@@ -19,5 +19,5 @@ Alt text:
 A four-panel plot showing various components of a weekly stream temperature forecast over the contiguous United States.
 Top left shows a range of weekly mean temperatures, <DESCRIPTION>
 Top right shows temperature trends over the week. <DESCRIPTION>
-Bottom left shows maximum temperature anomaly during the week. <DESCRIPTION>
-Bottom right shows minimum temperature anomaly. <DESCRIPTION>
+Bottom left shows mean temperature anomaly during the week. <DESCRIPTION>
+Bottom right shows largest (positive or negative) temperature anomaly. <DESCRIPTION>
