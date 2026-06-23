@@ -18,6 +18,14 @@ The code used to generate these forecasts is available on GitHub at https://gith
 3. Launch Jupyter and open `forecast.ipynb`.
 4. Run the notebook.
 
+## Automatic Forecasts
+
+For automatic forecasts, just convert the notebook to a Python script via `jupyter nbconvert --to python forecast.ipynb`, then run that script through your system of choice. The shell script `upload.sh` may be used to automatically upload the results to a HydroShare (or, with appropriate modification, other) system. To do so, you will need to edit the script to use the correct resource ID and then create system variables `$HSUSER` (username) and `$HSPASS` (password).
+
+On Linux, this is my crontab entry for running a forecast every day at 8 am:
+
+`0 8 * * * cd /home/daniel/code/forecasts; source venv/bin/activate; python forecast.py >> cronlog.txt; sh upload.sh`
+
 ## Output Variables
 
 Forecast outputs contain the following columns:
