@@ -4,6 +4,7 @@ python forecast.py
 # find files
 CSV=`ls full_forecasts | grep csv | tail -n 1`
 JSON=`ls full_forecasts | grep rawmap | tail -n 1`
+IMAGE=`ls figures | grep ForecastPlot_ | tail -n 1`
 DASH=/home/daniel/code/nextdash
 # upload files to HydroShare
 # Set HSUSER and HSPASS as environment variables
@@ -20,6 +21,8 @@ cd full_forecasts
 postfile $CSV
 postfile $JSON
 cp $JSON $DASH/forecast.json
+cd ../figures
+cp $IMAGE $DASH/forecast.png
 cd $DASH
 DATESTR=`date +"%a %b %d %Y"`
 echo "var today = \"$DATESTR\";" > today.js
