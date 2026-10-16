@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>TempEst-NEXT Forecast Dashboard</title>
+    <link rel="icon" href="https://rivertempest.org/_static/TempEstICOSquare.png"/>
+    <!-- We use Leaflet. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="/today.js"></script>
+    <style>
+    #map {
+      height: 600px;
+      width: 95%;
+    }
+    .info {
+        padding: 6px 8px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .info h4 {
+        margin: 0 0 5px;
+        color: #777;
+    }
+    .legend {
+        line-height: 18px;
+        color: #555;
+    }
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+    #staticmap {
+      width: 90%;
+    }
+    #inforow {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    #summary {
+      width: 45%;
+    }
+    #infoblock {
+      width: 45%;
+    }
+    @media (max-width: 1000px) {
+      /* mobile devices */
+      #inforow {
+        flex-direction: column;
+      }
+      #map {
+        width: 100%;
+      }
+      #summary {
+        width: 100%;
+      }
+      #infoblock {
+        width: 100%;
+      }
+    }
+    footer {
+        text-align: center;
+    }
+    td {
+      text-align: center;
+    }
+    #toprow {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      padding: 2px;
+      display: flex;
+      vertical-align: middle;
+      background-color: #ccc;
+    }
+    div#toprow {
+        height: 2.2em;
+    }
+    img.title {
+        vertical-align: middle;
+        height: 1.5em;
+        padding: 0px;
+    }
+    a.header {
+        float: left;
+        text-align: center;
+        vertical-align: middle;
+        width: 33%;
+        color: #FFF;
+        background-color: #555;
+        margin: auto;
+        line-height: 2em;
+        text-decoration: none;
+    }
+
+    a.header:hover {
+        background-color: #111;
+    }
+    </style>
+    <script>
+      var colors = ['#0000aa', '#0d0887', '#4c02a1', '#7e03a8', '#aa2395', '#cc4778', '#e66c5c', '#f89540', '#fdc527', '#f0f921']; // via https://waldyrious.net/viridis-palette-generator/
+      var minval = 0;
+      var maxval = 40;
+      // Get a list of forecast maps and find the newest one
+      var hslist = "https://www.hydroshare.org/hsapi/resource/b8852529788a437a8d697e9b0435b99a/file_list/";
+      var pathbase = "https://www.hydroshare.org/hsapi/resource/b8852529788a437a8d697e9b0435b99a/files/full_forecasts/";
+    </script>
+  </head>
+  <body>
+    <div id="toprow">
+    <a class="header" href="/">Home</a>
+    <a class="header" href="https://rivertempest.org/#contact">Contact Us</a>
+    <a class="header" href="https://www.hydroshare.org/resource/b8852529788a437a8d697e9b0435b99a/">Forecast Data</a>
+    <a class="header" href="https://rivertempest.org/next/readme.html">TempEst-NEXT</a>
+    <a class="header" href="https://people.mines.edu/thogue/">Hogue Research Group</a>
+    <a class="header" href="https://ciroh.mines.edu/">CIROH@Mines</a>
+    <a class="header" href="https://ciroh.ua.edu/">CIROH</a>
+    </div>
+    <header><h1 id="head" style="text-align: center;"><img alt="TempEst-NEXT Logo" src="https://rivertempest.org/_images/TempEstNext.png" class="title" />  TempEst-NEXT National Water Temperature Forecast</h1>
+    </header>
+    <main>
+    TEXT GOES HERE
+    </main>
+    <footer>Copyright (c) 2026 Daniel Philippus. Funded by the NOAA Cooperative Institute for Research to Operations in Hydrology. These data and related items of information have not been formally disseminated by NOAA, and do not represent any agency determination, view, or policy. This interactive map was created using Leaflet, OpenStreetMap, and CUAHSI HydroShare.<br /><img alt="TempEst-NEXT Logo" src="https://rivertempest.org/_images/TempEstNext.png" width="300" /></footer>
+  </body>
+</html>
