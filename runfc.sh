@@ -18,7 +18,7 @@ postfile() {
 	  -F "file=@$1;type=application/json"
 }
 cp table.html $DASH/table.html
-cp arrays.js $DASH/array.js
+cp arrays.js $DASH/arrays.js
 cd full_forecasts
 postfile $CSV
 postfile $JSON
